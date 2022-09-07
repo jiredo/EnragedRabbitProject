@@ -1,0 +1,50 @@
+,,,,,,,,,,
+Sourcing Guide for Ette's Enraged Rabbit : Carrot Feeder,,,,,,,,,,
+BOM for the Enraged Rabbit Carrot Feeder V1.1! This is for a N channels system (if you want 6 filaments then replace N by 6). This doesn't include the BOM for the toolhead sensor (for that look on the other tabs)!,,,,,,,,,,
+# Channels,9,Number of channels,,,,ALL ALI EXPRESS LINKS ARE AFFILIATED =),,,,
+,Component,Spec,Size/Length/ variable qty,Qty,All sizes,Source 1,Source 2,Source 3,Source 4,Notes
+Electronics,NEMA14 Motor 14HS11-1004S,,,1,All,Stepper Online,Aliexpress,,,
+Electronics,NEMA17 Motor 17HS08-1004S,,,1,All,Stepper Online,Stepper Online (Ali),Amazon DE,,
+Electronics,towerpro MG90S servo,,,1,All,Amazon US,Amazon FR,Amazon DE,Aliexpress,Knock off will work
+Electronics,"Stepper drivers (any, but TMC2209 are nice)",,,2,,Aliexpress,Amazon US,Amazon FR,Amazon DE,should have left over from 2.4BOM
+Electronics,TCRT5000 sensor pcb,,,1,,Amazon US,Aliexpress,Lab4450 (part of the kit),,There are many versions. The black PCB is mandatory. Try to get the version with the off-centered hole rather than the center one.
+Electronics,Omron Mouse Button - Micro Switch,,,1,,Digikey,,,,
+Hardware,N sets of bondtechs gears,qty = N + 1,10,Variable,,TwoTrees,,,,
+Hardware,LM8UU bearings or RJ4JP-01-08,8mm,,2,,TriangleLab,,,,
+Hardware,M5 threaded rods,Length = 25 + N*21 + ceil(N/3 -1)*5 mm,224,2,,Aliexpress,,,,You can also find it at your local hardware stores.
+Hardware,8mm smooth rods,Length = 40 + N*21 + ceil(N/3 - 1)*5 mm,239,2,,TwoTrees,,,,You can also find it at your local hardware stores.
+Hardware,D-cut 5mm shaft,Length = 70 + N*21 + ceil(N/3 - 1)*5 mm,269,1,,POWGE,"AliExpress FULL, NO D-CUT",,,"Powge can sell shafts with the D-cut already, but it's bertween 10€ and 20€ for 1 shaft; which is quite expensive. You can order a round 5mm shaft elsewhere (for like 2€) and do the D cuts yourself, this is a much cheaper option"
+Hardware,MR623ZZ bearing,,,1,All,TriangleLab,,,,
+Hardware,MR85ZZ bearings,qty = 4 + ceil(N/3 - 1),6,Variable,,TriangleLab,,,,
+Fasteners,M3 threaded inserts,M3x5x4mm. qty = 28,,28,All,Aliexpress - M3x5x4,,,,
+Fasteners,M5x30 BHCS,,,2,,Bolt Depot,McMaster-Carr (100 pack),,,
+Fasteners,M5x16 BHCS,,,1,,Bolt Depot,McMaster-Carr (100 pack),,,
+Fasteners,M5 nuts,,,4,,,,,,
+Fasteners,M5 nylock nuts,,,5,,,,,,
+Fasteners,M5 washers,whatever thickness,,2,,,,,,
+Fasteners,M3x8 SHCS,,,22,,Bolt Depot,McMaster-Carr (100 pack),,,
+Fasteners,M3x8 BHCS,,,5,,,,,,
+Fasteners,M3x12 SHCS,,,3,,Bolt Depot,McMaster-Carr (100 pack),,,
+Fasteners,M3x16 SHCS,qty = 4 + N,13,Variable,,Bolt Depot,McMaster-Carr (100 pack),,,
+Fasteners,M3x20 SHCS,,,7,,,,,,
+Fasteners,M3x40 SHCS,,,2,,,,,,
+Fasteners,M3 washers (could also be the DIN125 below),whatever thickness,,2,,,,,,
+Fasteners,M3 DIN125 Steel Washer,"7mm Outer diameter, 0.5mm thickness STEEL",9,Variable,,Bolt Depot,,,,We need those to be magnetic. Stainless Steel WON'T work
+Fasteners,M2x8 SHCS or M2x10 SHCS,,,2,,,,,,
+Motion ,GT2 belt 6mm (open),Length = 150 + N*42 +  ceil(N/3 - 1)*10 mm,548,1,,POWGE,,,,
+Motion ,"GT2 20T Pulley 6 mm, 5mm bore",,,3,,POWGE,,,,
+Motion ,"GT2 20T Toothed Idler 6 mm, 5mm bore",,,1,,POWGE,,,,
+Motion ,GT2 188m Belt loop 6mm,,,1,,POWGE,,,,
+Misc,6mm x 3mm Round Neodymium Magnets,6x3mm. qty = 4 + Nx3,31,Variable,,Aliexpress,,,,should have left over from 2.4BOM
+Misc,Bowden Clip,qty = 1 + N,10,Variable,,TriangleLab,,,,
+Misc,Bowden Fitting,qty = 1 + N,10,Variable,,TriangleLab,,,,
+Misc,7X7 Drag chain,,,1,,TwoTress,,,,
+"Option 1A : Nominal setup, MicroFit3 connectors on the ERCF side to connect to whatever board you want (typically your printer board). This assumes you won""t use the ERCF easy BRD",,,,,,,,,,
+Cables,MicroFit3 Male Pin (43031-0007)	,,,26,,,,,,
+Cables,MicroFit3 Female Pin (43030-0007)	,,,26,,,,,,
+Cables,MicroFit Connector Receptacle 4 Position (43645-0400)        ,,,4,,,,,,
+Cables,MicroFit Connector Plug 4 Position (43640-0401)	,,,4,,,,,,
+Cables,MicroFit Connector Receptacle 5 Position (43645-0500)        ,,,2,,,,,,
+Cables,MicroFit Connector Plug 5 Position (43640-0501)        ,,,2,,,,,,
+"Option 1B : ERCF Easy BRD (dedicated board for the ERCF), no need for the MicroFit3 connectors listed for option 1A",,,,,,,,,,
+Electronics,ERCF Easy BRD,,,1,,Lab4450 (part of the kit),,,,"The ERCF Easy BRD is an open source ERCF board made by Tircown, see here"
